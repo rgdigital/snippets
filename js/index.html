@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>RGDigital.io Snippets Test</title>
+  <title>RGDigital.io Snippets Test Page</title>
 
   <meta name="viewport" content="width=device-width">
   <!-- <meta name="google-site-verification" content="tSjbLJ8Y51F5TMotxC12T3q4aP50zWblsxiWqSYez6M" /> -->
@@ -25,9 +25,17 @@
 </head>
 <body>
 
+<img src="http://lorempixel.com/400/200" id="image"/>
+
   <script type="text/javascript">
+
+  var image = document.getElementById('image');
+
   var Helpers = new Helpers();
-  console.log(Helpers);
+  // console.log(image);
+  Helpers.image.getImageSize(image, function(size) {
+    console.log(size);
+  });
   </script>
 
 </body>
