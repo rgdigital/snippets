@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RGDigital.io Snippets Test Page</title>
+
+  <meta name="viewport" content="width=device-width">
+  <!-- <meta name="google-site-verification" content="tSjbLJ8Y51F5TMotxC12T3q4aP50zWblsxiWqSYez6M" /> -->
+  <!-- CSS -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> -->
+  <!-- <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="public/css/style.css"> -->
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Helpers minified -->
+  <script src="public/js/helpers.min.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+<img src="http://lorempixel.com/400/200" id="image"/>
+
+  <script type="text/javascript">
+
+  var image = document.getElementById('image');
+
+  var Helpers = new Helpers();
+  // console.log(image);
+  Helpers.image.getImageSize(image, function(size) {
+    console.log(size);
+  });
+  </script>
+
+</body>
+</html>
